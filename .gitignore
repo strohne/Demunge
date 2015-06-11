@@ -1,0 +1,7 @@
+data/
+private/
+src/build
+src/*.pyc
+src/*.pyo
+.project
+.pydevproject
