@@ -1,6 +1,7 @@
 #on command line: python build.py build
 
 import sys
+from cx_Freeze import setup, Executable
 
 exe = Executable(
         script="Demunge.py",
