@@ -1,4 +1,4 @@
-#on command line: python setup.py build
+#on command line: python build.py build
 
 import sys
 

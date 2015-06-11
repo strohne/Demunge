@@ -1,2 +1,2 @@
-python setup.py build
+python build.py build
 pause
