@@ -16,13 +16,13 @@ exe = Executable(
 buildoptions = {
   'includes': ["atexit","sys"],
   "packages":["numpy","pandas"],
-  'excludes':[],
+  'excludes':["collections.abc"],
   'include_files':[]
 }
 
 setup(
         name = "Demunge",
-        version = "1.0b",
+        version = "1.0",
         description = "Demunge data files",
         options = {'build_exe': buildoptions},
         executables = [exe]
