@@ -8,7 +8,10 @@ exe = Executable(
         base="Win32GUI",
         #icon="../icons/icon_demunge.ico",
         copyDependentFiles = True,
-        targetDir="build"
+        compress = True,
+        targetDir="build",
+        appendScriptToExe=True,
+        appendScriptToLibrary=False        
         )
 
 
@@ -16,7 +19,12 @@ exe = Executable(
 buildoptions = {
   #'includes': ["atexit","sys"],
   #"packages":["numpy","pandas"],
-  'excludes':["collections.abc","tkinter","lxml"],
+  'excludes':["collections.abc",                
+              'lxml','bs4','email','OpenSSL','requests','sqlalchemy','zmq','multiprocessing',
+              'Tkinter',
+              "PySide.QtSvg","PySide.QtNetwork",
+              "PyQt4.QtSql", "sqlite3",
+              "libsodium"],
   'include_files':[]
 }
 
