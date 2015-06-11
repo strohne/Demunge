@@ -14,9 +14,9 @@ exe = Executable(
 
 
 buildoptions = {
-  'includes': ["atexit","sys"],
-  "packages":["numpy","pandas"],
-  'excludes':["collections.abc"],
+  #'includes': ["atexit","sys"],
+  #"packages":["numpy","pandas"],
+  'excludes':["collections.abc","tkinter","lxml"],
   'include_files':[]
 }
 
