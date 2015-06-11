@@ -1,7 +1,7 @@
 cd ../src
+rmdir /S /Q build
 
 python build.py build
-
 
 cd build
 copy Demunge.exe exe.win32-2.7

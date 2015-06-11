@@ -9,6 +9,7 @@ QVariant = lambda value=None: value
 class TableTabsWidget(QTabWidget):
     def __init__(self, mainWindow=None):
         super(TableTabsWidget, self).__init__(mainWindow)
+        self.setTabsClosable(True)
         self.mainWindow = mainWindow
         self.currentChanged.connect(self.mainWindow.actions.changeTable)
 

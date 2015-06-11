@@ -159,6 +159,19 @@ class Actions(object):
                 tab.setName(filebasename)
 
             elif filetype == filetype_facepager:
+
+# Automatically detect and remove BOM?
+#                 infile = open(filename, 'rb')
+#                 raw = infile.read(2)
+#                 for enc,boms in \
+#                         ('utf-8',(codecs.BOM_UTF8,)),\
+#                         ('utf-16',(codecs.BOM_UTF16_LE,codecs.BOM_UTF16_BE)),\
+#                         ('utf-32',(codecs.BOM_UTF32_LE,codecs.BOM_UTF32_BE)):
+#                     if any(raw.startswith(bom) for bom in boms):
+#                         encoding = enc
+#
+#                         break
+
                 df = read_csv(filename, sep=";",encoding='utf-8-sig',dtype=str)
 
                 firstcolumn = df.columns.values[0]
